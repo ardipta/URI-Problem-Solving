@@ -1,11 +1,12 @@
 #include<stdio.h>
 
 int main(){
-    int a, b, c, maiorAB, maior;
-    scanf("%d %d %d", &a, &b, &c);
-    maiorAB=(a + b + abs(a-b))/2;
-    maior = (maiorAB + c + abs(maiorAB - c))/2;
-    printf("%d eh o maior\n", maior);
+    double R, pi = 3.14159;
+    float volume;
+    scanf("%lf", &R);
+    volume = (4.0/3.0)*pi*(R*R*R);
+    printf("VOLUME = %.3f\n", volume);
+
     return 0;
 
 }
